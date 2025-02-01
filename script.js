@@ -13,8 +13,9 @@ async function fetchGoogleFormResponses() {
 
         rows.forEach(row => {
             const columns = row.split(",");
-            const name = columns[7]; // Adjust index based on Google Sheet structure
-            const review = columns[8]; 
+            const name = columns[2]; // Adjust index based on Google Sheet structure
+            const review = columns[5]; 
+             const review = columns[6]; 
 
             const reviewDiv = document.createElement("div");
             reviewDiv.className = "review-item";
