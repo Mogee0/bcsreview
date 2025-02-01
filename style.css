@@ -21,7 +21,7 @@ body {
 }
 
 .header h1 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     color: #8B4513;
     font-family: 'Playfair Display', serif;
@@ -137,7 +137,7 @@ body {
 /* 🌟 Responsive Design for Mobile 🌟 */
 @media (max-width: 600px) {
     .header h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .container, .reviews-display, .review-section,.about-us-section ,.footer {
