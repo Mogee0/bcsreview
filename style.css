@@ -17,7 +17,7 @@ body {
 .header {
     text-align: center;
     margin-bottom: 20px;
-    width: 90%;
+    width: 98%;
 }
 
 .header h1 {
@@ -137,7 +137,7 @@ body {
 /* 🌟 Responsive Design for Mobile 🌟 */
 @media (max-width: 600px) {
     .header h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .container, .reviews-display, .review-section,.about-us-section ,.footer {
