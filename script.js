@@ -32,6 +32,8 @@ async function fetchGoogleFormResponses() {
 // Load reviews on page load
 document.addEventListener("DOMContentLoaded", fetchGoogleFormResponses);
 
+document.addEventListener("DOMContentLoaded", function() {
+    const backgroundContainer = document.querySelector(".background-container");
 function createMovingElement() {
         const element = document.createElement("div");
         element.classList.add("moving-element");
