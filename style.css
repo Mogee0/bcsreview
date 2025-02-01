@@ -30,7 +30,7 @@ body {
     font-size: 14px;
     color: #5A3E1B;
 }
-
+/* Container 1: White */
 .container {
     width: 90%;
     max-width: 400px; /* ✅ Fixed size */
@@ -100,14 +100,14 @@ body {
     max-width: 350px; /* ✅ Reduced review box size */
     text-align: left;
 }
-.container {
-  width: 80%; /* Adjust as needed */
-  margin: 20px auto; /* Center the container */
+/* Container 2: purple */
+.container-purple {
+  width: 80%;
+  margin: 20px auto;
   padding: 20px;
-    font-family: "Times New Roman", serif; 
-  background: linear-gradient(to bottom, #E4A0F7, #D8BFD8); /* Purple gradient */
-  border-radius: 10px; /* Optional: Rounded corners */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  background: linear-gradient(to bottom, #E6BCCD, #F8E7F7); /* Lighter purple shades */
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
     
 .footer {
