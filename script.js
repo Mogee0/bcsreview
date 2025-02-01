@@ -6,6 +6,7 @@ const reviews = [
         liked: "Amazing flavors and quick service.",
         suggestions: "Would love more dessert options."
     },
+    
 ];
 
 function displayReviews() {
