@@ -16,7 +16,7 @@ async function fetchGoogleFormResponses() {
             const name = columns[2]; // Adjust index based on Google Sheet structure
             const review = columns[5]; 
             const most  = columns[6]; 
-            const star = columns[6]; 
+            const star = columns[7]; 
             const reviewDiv = document.createElement("div");
             reviewDiv.className = "review-item";
             reviewDiv.innerHTML = `
