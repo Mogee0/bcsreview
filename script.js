@@ -15,13 +15,14 @@ async function fetchGoogleFormResponses() {
             const columns = row.split(",");
             const name = columns[2]; // Adjust index based on Google Sheet structure
             const review = columns[5]; 
+            const most  = columns[6]; 
             const star = columns[6]; 
-            
             const reviewDiv = document.createElement("div");
             reviewDiv.className = "review-item";
             reviewDiv.innerHTML = `
                 <h3>${name}</h3>
                 <p>${review}</p>
+                 <p>${most}</p>
                 <p>${star}</p>
             `;
             reviewsContainer.appendChild(reviewDiv);
