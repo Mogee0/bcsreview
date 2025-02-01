@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #F5DEB3, #FFF8DC);
+    color: black;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8B4513;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.header p {
+    font-size: 16px;
+    color: #5A3E1B;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.google-form-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #DAA520;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-family: Verdana, sans-serif;
+}
+
+.google-form-button:hover {
+    background-color: #B8860B;
+}
+
+.review-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.google-review-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.google-review-button:hover {
+    background-color: #0056b3;
+}
+
+.reviews-display {
+    margin-top: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.review-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #8B4513;
+    font-weight: bold;
+}
