@@ -137,15 +137,15 @@ body {
 /* 🌟 Responsive Design for Mobile 🌟 */
 @media (max-width: 600px) {
     .header h1 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .container, .reviews-display, .review-section,.about-us-section ,.footer {
-        width: 90%;
+        width: 95%;
     }
 
     .google-form-button, .google-review-button {
-        font-size: 18px;
+        font-size: 20px;
         padding: 8px 12px;
     }
 
