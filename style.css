@@ -11,7 +11,6 @@ body {
     padding: 20px;
     background: linear-gradient(135deg, #F5DEB3, #FFF8DC);
     color: black;
-     overflow: hidden;
   
 }
 
@@ -41,8 +40,6 @@ body {
     padding: 15px; /* ✅ Reduced padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-     overflow: hidden;
-    z-index: -1;
     margin-bottom: 20px; /* ✅ Added spacing */
 }
 
@@ -92,8 +89,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-     overflow: hidden;
-    z-index: -1;
     gap: 10px; /* ✅ Reduced spacing */
 }
 
@@ -115,8 +110,6 @@ body {
      font-family: "Times New Roman", serif;
   background: linear-gradient(to bottom, #E6BCCD, #F8E7F7); /* Lighter purple shades */
   border-radius: 10px;
-     overflow: hidden;
-    z-index: -1;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -130,8 +123,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    z-index: -1;
 }
 
 .footer {
@@ -146,15 +137,15 @@ body {
 /* 🌟 Responsive Design for Mobile 🌟 */
 @media (max-width: 600px) {
     .header h1 {
-        font-size: 24px;
+        font-size: 36px;
     }
 
     .container, .reviews-display, .review-section,.about-us-section ,.footer {
-        width: 95%;
+        width: 90%;
     }
 
     .google-form-button, .google-review-button {
-        font-size: 14px;
+        font-size: 18px;
         padding: 8px 12px;
     }
 
