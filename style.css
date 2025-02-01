@@ -100,14 +100,21 @@ body {
     max-width: 350px; /* ✅ Reduced review box size */
     text-align: left;
 }
-/* Container 2: purple */
+
+/* Container 2: Light Purple Gradient */
 .container-purple {
   width: 80%;
   margin: 20px auto;
   padding: 20px;
+     font-family: "Times New Roman", serif;
   background: linear-gradient(to bottom, #E6BCCD, #F8E7F7); /* Lighter purple shades */
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-purple p { /* Target paragraphs ONLY within .container-purple */
+  font-style: italic;
+  color: black;
 }
     
 .footer {
