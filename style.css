@@ -99,7 +99,14 @@ body {
 .about-us-section {
   font-family: "Times New Roman", serif; 
 }
-
+.container {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  background: linear-gradient(to bottom, #8A2BE2, #D8BFD8); /* Purple gradient */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
     
 .footer {
     margin-top: 10px;
