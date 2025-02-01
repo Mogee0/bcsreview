@@ -1,127 +1,23 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #F5DEB3, #FFF8DC);
-    color: black;
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 90%;
-}
-
-.header h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #8B4513;
-    font-family: 'Playfair Display', serif;
-}
-
-.header p {
-    font-size: 14px;
-    color: #5A3E1B;
-}
-
-.container {
-    width: 90%;
-    max-width: 400px; /* ✅ Fixed size */
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    padding: 15px; /* ✅ Reduced padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin-bottom: 20px; /* ✅ Added spacing */
-}
-
-.google-form-button, .google-review-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-    width: 90%;
-    text-align: center;
-}
-
-.google-form-button {
-    background-color: #DAA520;
-}
-
-.google-form-button:hover {
-    background-color: #B8860B;
-}
-
-.google-review-button {
-    background-color: #007BFF;
-}
-
-.google-review-button:hover {
-    background-color: #0056b3;
-}
-
-.review-section {
-    text-align: center;
-    margin-top: 10px;
-    width: 90%;
-}
-
 .reviews-display {
-    margin-top: 15px;
     width: 90%;
     max-width: 400px; /* ✅ Fixed size */
+    height: 300px; /* ✅ Limited height */
+    overflow-y: auto; /* ✅ Enables scrolling */
     background: rgba(255, 255, 255, 0.9);
     padding: 15px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* ✅ Reduced spacing */
+    gap: 10px;
 }
 
 .review-item {
     background: #fff;
-    padding: 10px; /* ✅ Reduced padding */
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 350px; /* ✅ Reduced review box size */
+    max-width: 350px; /* ✅ Fixed review box size */
     text-align: left;
-}
-
-.footer {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: #8B4513;
-    font-weight: bold;
-    width: 90%;
-}
-
-/* 🌟 Responsive Design for Mobile 🌟 */
-@media (max-width: 600px) {
-    .header h1 {
-        font-size: 24px;
-    }
-
-    .container, .reviews-display, .review-section, .footer {
-        width: 95%;
-    }
-
-    .google-form-button, .google-review-button {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    .review-item {
-        max-width: 100%;
-    }
 }
