@@ -15,7 +15,7 @@ body {
 }
 
 .header h1 {
-    font-size: 26px;
+    font-size: 36px;
     font-weight: bold;
     color: #8B4513;
     margin-bottom: 5px;
@@ -23,7 +23,7 @@ body {
 }
 
 .header p {
-    font-size: 16px;
+    font-size: 12px;
     color: #5A3E1B;
 }
 
