@@ -6,13 +6,6 @@ const reviews = [
         liked: "Amazing flavors and quick service.",
         suggestions: "Would love more dessert options."
     },
-    {
-        name: "Priya Sharma",
-        quality: "Fantastic",
-        recommend: "Definitely",
-        liked: "Hygienic and tasty food.",
-        suggestions: "Introduce a meal combo offer."
-    }
 ];
 
 function displayReviews() {
