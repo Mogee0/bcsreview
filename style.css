@@ -96,7 +96,11 @@ body {
     max-width: 350px; /* ✅ Reduced review box size */
     text-align: left;
 }
+.about-us-section {
+  font-family: "Times New Roman", serif; 
+}
 
+    
 .footer {
     margin-top: 10px;
     text-align: center;
@@ -112,7 +116,7 @@ body {
         font-size: 24px;
     }
 
-    .container, .reviews-display, .review-section, .footer {
+    .container, .reviews-display, .review-section,.about-us-section ,.footer {
         width: 95%;
     }
 
