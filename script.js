@@ -6,7 +6,7 @@ async function fetchGoogleFormResponses() {
     try {
         const response = await fetch(googleSheetURL);
         const data = await response.text();
-        const rows = data.split("\n").slice(1); 
+        const rows = data.split("\n").slice(1); //include header row
 
         const reviewsContainer = document.getElementById("reviews-container");
         reviewsContainer.innerHTML = ""; // Clear old data
