@@ -4,7 +4,7 @@ const googleSheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHkcihZ
 // Function to fetch and display responses dynamically
 async function fetchGoogleFormResponses() {
     try {
-        const response = await fetch(googleSheetURL);
+        const response = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vTHkcihZDIxeRRmtfyEv37W3hGQhkTYyPAh7K1ebVrGHB6YIEZbu3EoFX_vjTMYNvYFHePX9UMVM9ai/pub?gid=758914046&single=true&output=csv");
         const data = await response.text();
         const rows = data.split("\n").slice(1); // Skip header row
 
