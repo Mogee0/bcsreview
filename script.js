@@ -37,7 +37,7 @@ async function fetchGoogleFormResponses() {
 }
 
 // Refresh reviews every 30 seconds to keep it updated
-setInterval(fetchGoogleFormResponses, 30000);
+setInterval(fetchGoogleFormResponses, 30);
 
 // Load reviews on page load
 document.addEventListener("DOMContentLoaded", fetchGoogleFormResponses);
