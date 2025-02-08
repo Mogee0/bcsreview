@@ -9,7 +9,7 @@ async function fetchGoogleFormResponses() {
         const rows = data.split("\n").slice(1); //skip header row
 
         const reviewsContainer = document.getElementById("reviews-container");
-        reviewsContainer.innerHTML = ""; // Clear previous reviews before adding new ones
+        reviewsContainer.innerHTML = ""; // Clear old data
 
         rows.forEach(row => {
             const columns = row.split(",");
