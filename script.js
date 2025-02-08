@@ -6,31 +6,39 @@ async function fetchGoogleFormResponses() {
     try {
         const response = await fetch(googleSheetURL);
         const data = await response.text();
-        const rows = data.split("\n").slice(1); //skip header row
+        const rows = data.split("\n").slice(1); // Skip header row
 
         const reviewsContainer = document.getElementById("reviews-container");
-        reviewsContainer.innerHTML = ""; // Clear old data
+        reviewsContainer.innerHTML = ""; // **Clear old reviews before adding new ones**
 
         rows.forEach(row => {
             const columns = row.split(",");
-            const name = columns[2]; // Adjust index based on Google Sheet structure
-            const review = columns[5]; 
-            const most  = columns[6]; 
+            const name = columns[1]?.trim(); // Adjust index based on Google Sheet structure
+            const review = columns[5]?.trim();
+             const most  = columns[6]; 
             const star = columns[7]; 
-            const reviewDiv = document.createElement("div");
-            reviewDiv.className = "review-item";
-            reviewDiv.innerHTML = `
-                <h3>${name}</h3>
-                <p>${review}</p>
-                 <p>${most}</p>
+
+            if (name && review) { // Ensure both fields are valid
+                const reviewDiv = document.createElement("div");
+                reviewDiv.className = "review-item";
+                reviewDiv.innerHTML = `
+                    <h3>${name}</h3>
+                    <p>${review}</p>
+                       <p>${most}</p>
                 <p>${star}</p>
             `;
-            reviewsContainer.appendChild(reviewDiv);
+                
+                reviewsContainer.appendChild(reviewDiv);
+            }
         });
     } catch (error) {
         console.error("Error fetching form responses:", error);
     }
 }
 
+// Refresh reviews every 30 seconds to keep it updated
+setInterval(fetchGoogleFormResponses, 30000);
+
 // Load reviews on page load
 document.addEventListener("DOMContentLoaded", fetchGoogleFormResponses);
+
