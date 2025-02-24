@@ -21,13 +21,13 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
 .header h1 {
     font-size: 25px;
     font-weight: bold;
-    color: #8B4513;
+    color: #65350F;
     font-family: 'Playfair Display', serif;
 }
 
 .header p {
     font-size: 14px;
-    color: #5A3E1B;
+    color: #481F01;
 }
 /* Container 1: White */
 .container {
