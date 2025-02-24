@@ -1,44 +1,4 @@
 
-  .review-container {
-            width: 350px;
-             height:150px
-            margin: auto;
-            position: relative;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-        }
-        .review-item {
-            position: absolute;
-            width: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .review-item.active {
-            opacity: 1;
-        }
-        .stars {
-            color: gold;
-        }
-        .indicator {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .bar {
-            width: 30px;
-            height: 5px;
-            background: white;
-            margin: 5px;
-            border-radius: 5px;
-            opacity: 0.5;
-            transition: opacity 0.3s;
-        }
-        .bar.active {
-            opacity: 1;
-            background: gold;
-        }
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -112,35 +72,46 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
     background-color: #0056b3;
 }
 
-.review-section {
-    text-align: center;
-    margin-top: 10px;
-    width: 90%;
-}
-
-.reviews-display {
-    margin-top: 15px;
-    width: 90%;
-    max-width: 400px; /* ✅ Fixed size */
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* ✅ Reduced spacing */
-}
-
-.review-item {
-    background: #fff;
-    padding: 10px; /* ✅ Reduced padding */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 350px; /* ✅ Reduced review box size */
-    text-align: left;
-}
-
+  .review-container {
+            width: 290px;
+             height:150px
+            margin: auto;
+            position: relative;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        .review-item {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .review-item.active {
+            opacity: 1;
+        }
+        .stars {
+            color: gold;
+        }
+        .indicator {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .bar {
+            width: 30px;
+            height: 5px;
+            background: white;
+            margin: 5px;
+            border-radius: 5px;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+        .bar.active {
+            opacity: 1;
+            background: gold;
+        }
 /* Container 3: Light Purple Gradient */
 .container-purple {
   width: 80%;
