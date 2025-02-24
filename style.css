@@ -1,15 +1,7 @@
-.review-container {
-            width: 350px;
-            margin: auto;
-            overflow: hidden;
-            position: relative;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-        }
+
   .review-container {
             width: 350px;
+             height:150px
             margin: auto;
             position: relative;
             background: rgba(255, 255, 255, 0.2);
