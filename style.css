@@ -8,10 +8,11 @@
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
         }
-        .review-slider {
+.review-slider {
             display: flex;
+            width: 200%; /* Ensuring both reviews fit */
             transition: transform 0.5s ease-in-out;
-        }
+}
         .review-item {
             min-width: 100%;
             padding: 15px;
