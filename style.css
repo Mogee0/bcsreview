@@ -11,7 +11,8 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
     color: black;
   
 }
-{
+/* Container 2: Light Sky BlueGradient */
+.container-Blue {
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #3c1053, #ad5389);
             color: white;
@@ -19,7 +20,7 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
             padding: 20px;
         }
         .review-container {
-            max-width: 600px;
+            max-width: 300px;
             margin: auto;
             background: rgba(255, 255, 255, 0.2);
             padding: 20px;
@@ -133,7 +134,7 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
     text-align: left;
 }
 
-/* Container 2: Light Purple Gradient */
+/* Container 3: Light Purple Gradient */
 .container-purple {
   width: 80%;
   margin: 20px auto;
