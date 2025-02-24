@@ -77,7 +77,7 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
 }
 
 .review {
-  border: 10px solid #0d0; /* Light gray border */
+  border: 5px solid #000; /* Light gray border */
   padding: 20px;
   margin-bottom: 10px; /* Space between reviews */
 }
