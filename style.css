@@ -71,47 +71,34 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
 .google-review-button:hover {
     background-color: #0056b3;
 }
+.reviews-container {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto; /* Center the reviews */
+}
 
-  .review-container {
-            width: 290px;
-             height:150px
-            margin: auto;
-            position: relative;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-        }
-        .review-item {
-            position: absolute;
-            width: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .review-item.active {
-            opacity: 1;
-        }
-        .stars {
-            color: gold;
-        }
-        .indicator {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .bar {
-            width: 30px;
-            height: 5px;
-            background: white;
-            margin: 5px;
-            border-radius: 5px;
-            opacity: 0.5;
-            transition: opacity 0.3s;
-        }
-        .bar.active {
-            opacity: 1;
-            background: gold;
-        }
+.review {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 20px;
+  margin-bottom: 10px; /* Space between reviews */
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between; /* Align name and stars */
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-weight: bold;
+}
+
+.review-stars {
+  color: gold; /* Example star color */
+}
+
+.review-content {
+  font-style: italic;
+}
 /* Container 3: Light Purple Gradient */
 .container-purple {
   width: 80%;
