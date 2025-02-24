@@ -1,7 +1,26 @@
-header img {
-    max-width: 150px;
-    height: auto;
-}
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #3c1053, #ad5389);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .review-container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .review {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 15px 0;
+        }
+        .stars {
+            color: gold;
+        }
+   
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
