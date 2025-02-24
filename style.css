@@ -1,3 +1,54 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #3c1053, #ad5389);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .review-container {
+            width: 350px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        .review-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .review-item {
+            min-width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .stars {
+            color: gold;
+        }
+        .indicator {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .bar {
+            width: 30px;
+            height: 5px;
+            background: white;
+            margin: 5px;
+            border-radius: 5px;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+        .bar.active {
+            opacity: 1;
+            background: gold;
+        }
+    </style>
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
