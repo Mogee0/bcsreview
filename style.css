@@ -5,7 +5,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-background-image: radial-gradient( circle 1171px at 58.3% 57.8%,  rgba(255,163,55,1) 0%, rgba(255,226,118,1) 90% );
+background: #1D976C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: black;
   
 }
