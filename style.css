@@ -1,12 +1,4 @@
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #3c1053, #ad5389);
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .review-container {
+.review-container {
             width: 350px;
             margin: auto;
             overflow: hidden;
@@ -48,7 +40,6 @@
             opacity: 1;
             background: gold;
         }
-    </style>
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
