@@ -46,9 +46,7 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
         .review-text {
             font-style: italic;
         }
-  .divider {
-            border-top: 1px solid rgba(255, 255, 255, 0.5);
-            margin: 10px 0;
+  
 .header {
     text-align: center;
     margin-bottom: 20px;
