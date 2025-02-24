@@ -1,7 +1,7 @@
-
-
-
-
+header img {
+    max-width: 150px;
+    height: auto;
+}
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
