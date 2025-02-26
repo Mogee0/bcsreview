@@ -143,6 +143,21 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
     text-decoration: underline;
 }
 
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .btn {
+            background-color: #25D366;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+  
 .footer {
     margin-top: 10px;
     text-align: center;
