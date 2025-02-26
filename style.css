@@ -157,7 +157,15 @@ background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, F
             border-radius: 5px;
             display: inline-block;
         }
-  
+    .scroll-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left 10s linear infinite;
+        }
+        @keyframes scroll-left {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
 .footer {
     margin-top: 10px;
     text-align: center;
