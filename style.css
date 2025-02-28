@@ -63,11 +63,11 @@ background: linear-gradient(to bottom, #EBE2E0, #990302);
 }
 
 .google-review-button {
-    background-color: #007BFF;
+    background-color: #4B2C35;
 }
 
 .google-review-button:hover {
-    background-color: #0056b3;
+    background-color: #F7D5DC;
 }
 .reviews-container {
   width: 80%; /* Adjust as needed */
