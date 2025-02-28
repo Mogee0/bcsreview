@@ -20,13 +20,13 @@ background: linear-gradient(to bottom, #EBE2E0, #990302);
 .header h1 {
     font-size: 25px;
     font-weight: bold;
-    color: #65350F;
+    color: #990302;
     font-family: 'Playfair Display', serif;
 }
 
 .header p {
     font-size: 14px;
-    color: #481F01;
+    color: #990302;
 }
 /* Container 1: White */
 .container {
@@ -168,7 +168,7 @@ background: linear-gradient(to bottom, #EBE2E0, #990302);
     margin-top: 10px;
     text-align: center;
     font-size: 14px;
-    background-color: radial-gradient( circle 957px at 1.9% 48.3%,  rgba(28,61,247,1) 0%, rgba(215,64,64,1) 53.7%, rgba(215,64,64,1) 90% );
+    background-color: #D8C9AE
     font-weight: bold;
     width: 90%;
 }
