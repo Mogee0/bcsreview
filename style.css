@@ -40,7 +40,7 @@ body {
     margin-bottom: 20px;
 }
 
-.google-form-button, .google-review-button,  {
+.google-form-button, .google-review-button, {
     display: inline-block;
     margin-top: 10px;
     padding: 12px 18px;
@@ -70,7 +70,7 @@ body {
 .google-review-button:hover {
     background-color: #D35400;
     transform: scale(1.05);
-
+}
 .reviews-container {
     width: 40%;
     margin: 20px auto;
@@ -123,8 +123,9 @@ body {
 }
 
 .contract-section a:hover {
-    text-decoration: none;}
-    
+    text-decoration: underline;
+}
+
 .footer {
     margin-top: 10px;
     text-align: center;
