@@ -68,6 +68,7 @@ background-color:#EBE2E0
 
 .google-review-button:hover {
     background-color: #F7D5DC;
+     transition: background-color 0.3s ease;
 }
 .reviews-container {
   width: 40%; /* Adjust as needed */
