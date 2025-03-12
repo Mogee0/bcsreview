@@ -30,7 +30,7 @@ background-color:#EBE2E0
 }
 /* Container 1: White */
 .container {
-    width: 90%;
+    width: 80%;
     max-width: 400px; /* ✅ Fixed size */
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -127,7 +127,7 @@ background-color:#EBE2E0
     font-size: 18px;
     font-weight: bold;
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
