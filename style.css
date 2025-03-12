@@ -123,27 +123,19 @@ body {
 }
 
 .contract-section a:hover {
-    text-decoration: underline;
-}
-
-.download-button {
-    background-color: #27AE60; /* Green */
-}
-
-.download-button:hover {
-    background-color: #2ECC71;
-    transform: scale(1.05);
-}
-
-.join-now-button {
-    background-color: #2980B9; /* Blue */
-}
-
-.join-now-button:hover {
-    background-color: #3498DB;
-    transform: scale(1.05);
-}}
-
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 90%;
+    text-align: center;}
+    
 .footer {
     margin-top: 10px;
     text-align: center;
