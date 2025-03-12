@@ -40,7 +40,7 @@ body {
     margin-bottom: 20px;
 }
 
-.google-form-button, .google-review-button, .download-button, .join-now-button {
+.google-form-button, .google-review-button,  {
     display: inline-block;
     margin-top: 10px;
     padding: 12px 18px;
@@ -70,25 +70,6 @@ body {
 .google-review-button:hover {
     background-color: #D35400;
     transform: scale(1.05);
-}
-
-.download-button {
-    background-color: #27AE60; /* Green */
-}
-
-.download-button:hover {
-    background-color: #2ECC71;
-    transform: scale(1.05);
-}
-
-.join-now-button {
-    background-color: #2980B9; /* Blue */
-}
-
-.join-now-button:hover {
-    background-color: #3498DB;
-    transform: scale(1.05);
-}
 
 .reviews-container {
     width: 40%;
@@ -144,6 +125,24 @@ body {
 .contract-section a:hover {
     text-decoration: underline;
 }
+
+.download-button {
+    background-color: #27AE60; /* Green */
+}
+
+.download-button:hover {
+    background-color: #2ECC71;
+    transform: scale(1.05);
+}
+
+.join-now-button {
+    background-color: #2980B9; /* Blue */
+}
+
+.join-now-button:hover {
+    background-color: #3498DB;
+    transform: scale(1.05);
+}}
 
 .footer {
     margin-top: 10px;
