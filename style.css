@@ -3,16 +3,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Changed to flex-start to prevent centering */
     padding: 20px;
     background-color: #FFF4E6; /* Light creamy beige */
     color: #4A1A00; /* Rich brown */
+    min-height: 100vh; /* Ensure body takes full height */
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .header {
     text-align: center;
     margin-bottom: 20px;
-    width: 98%;
+    width: 100%; /* Changed to 100% */
 }
 
 .header h1 {
@@ -29,15 +32,15 @@ body {
 
 /* Container Styling */
 .container {
-    width: 90%;
-    max-width: 200px;
+    width: 100%; /* Changed to 100% */
+    max-width: 1200px; /* Set a max-width for larger screens */
     background: #FFFBF3; /* Soft warm white */
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     text-align: center;
     margin-bottom: 20px;
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .google-form-button, .google-review-button, .download-button, .join-now-button {
@@ -91,7 +94,8 @@ body {
 }
 
 .reviews-container {
-    width: 40%;
+    width: 100%; /* Changed to 100% */
+    max-width: 800px; /* Set a max-width for larger screens */
     margin: 20px auto;
 }
 
@@ -114,7 +118,8 @@ body {
 }
 
 .container-purple {
-    width: 80%;
+    width: 100%; /* Changed to 100% */
+    max-width: 800px; /* Set a max-width for larger screens */
     margin: 20px auto;
     padding: 20px;
     font-family: 'Times New Roman', serif;
@@ -151,7 +156,7 @@ body {
     font-size: 14px;
     color: #A04000;
     font-weight: bold;
-    width: 90%;
+    width: 100%; /* Changed to 100% */
 }
 
 /* Styles for devices with a width of 600px or more */
@@ -167,4 +172,3 @@ body {
     display: none;
   }
 }
-
