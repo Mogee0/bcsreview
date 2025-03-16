@@ -1,180 +1,60 @@
+:root {
+  --primary-color: #4CAF50; /* Primary theme color */
+  --secondary-color: #ffffff; /* Secondary color */
+  --text-color: #333333; /* Primary text color */
+  --background-color: #f8f8f8; /* Background color */
+  --font-family: 'Arial, sans-serif'; /* Default font family */
+}
 body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Changed to flex-start to prevent centering */
-    padding: 20px;
-    background-color: #FFF4E6; /* Light creamy beige */
-    color: #4A1A00; /* Rich brown */
-    min-height: 100vh; /* Ensure body takes full height */
-    box-sizing: border-box;
-    margin: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
 }
-
-.header {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%; /* Changed to 100% */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
 }
-
-.header h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #D35400; /* Deep orange */
-    font-family: 'Playfair Display', serif;
+a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
-
-.header p {
-    font-size: 16px;
-    color: #A04000; /* Warm brown */
+a:hover {
+  text-decoration: underline;
 }
-
-/* Container Styling */
+button, .button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover, .button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
 .container {
-    width: 100%; /* Changed to 100% */
-    max-width: 1200px; /* Set a max-width for larger screens */
-    background: #FFFBF3; /* Soft warm white */
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    margin-bottom: 20px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-
-.google-form-button, .google-review-button, .download-button, .join-now-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 12px 18px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 90%;
-    text-align: center;
+.section {
+  margin-bottom: 40px;
 }
-
-.google-form-button {
-    background-color: #E67E22; /* Orange */
+.section-title {
+  margin-bottom: 20px;
 }
-
-.google-form-button:hover {
-    background-color: #F5B041; /* Lighter orange */
-    transform: scale(1.05);
+/* Add hover effects and transitions */
+button, .button {
+  transition: all 0.3s ease;
 }
-
-.google-review-button {
-    background-color: #A04000; /* Warm brown */
+button:hover, .button:hover {
+  background-color: #45a049; /* Slightly darker shade of primary color */
 }
-
-.google-review-button:hover {
-    background-color: #D35400;
-    transform: scale(1.05);
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
-.download-button {
-    background-color: #27AE60; /* Green */
-}
-
-.download-button:hover {
-    background-color: #2ECC71;
-    transform: scale(1.05);
-}
-
-.join-now-button {
-    background-color: #2980B9; /* Blue */
-}
-
-.join-now-button:hover {
-    background-color: #3498DB;
-    transform: scale(1.05);
-}
-
-.reviews-container {
-    width: 100%; /* Changed to 100% */
-    max-width: 800px; /* Set a max-width for larger screens */
-    margin: 20px auto;
-}
-
-.review {
-    border: 2px solid #A04000;
-    padding: 20px;
-    margin-bottom: 10px;
-    background: #FFF5E1; /* Light warm beige */
-    border-radius: 8px;
-}
-
-.review-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.review-stars {
-    color: gold;
-}
-
-.container-purple {
-    width: 100%; /* Changed to 100% */
-    max-width: 800px; /* Set a max-width for larger screens */
-    margin: 20px auto;
-    padding: 20px;
-    font-family: 'Times New Roman', serif;
-    background: linear-gradient(to bottom, #FFAD60, #FFD8B1);
-    border-radius: 12px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.contract-section {
-    text-align: center;
-    background-color: #FDEBD0;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px auto;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contract-section a {
-    color: #A04000;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contract-section a:hover {
-    text-decoration: underline;
-}
-
-.join-now-button:hover {
-  background-color: #4CAF50; 
-  color: white; 
-  border: 2px solid #4CAF50; 
-  transition: all 0.3s ease; 
-}
-.footer {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: #A04000;
-    font-weight: bold;
-    width: 100%; /* Changed to 100% */
-}
-
-/* Styles for devices with a width of 600px or more */
-@media (min-width: 600px) {
-  .sidebar {
-    display: block;
-  }
-}
-
-/* Styles for devices with a width less than 600px */
-@media (max-width: 599px) {
-  .sidebar {
-    display: none;
-  }
+.fade-in {
+  animation: fadeIn 1s ease-in;
 }
