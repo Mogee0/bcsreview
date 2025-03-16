@@ -151,27 +151,6 @@ background: #FFFFFF
     font-weight: bold;
     width: 90%;
 }
-
-
-/* 🌟 Responsive Design for Mobile 🌟 */
-@media (max-width: 600px) {
-    .header h1 {
-        font-size: 22px;
-    }
-
-    .container, .reviews-display, .review-section,.about-us-section ,.footer {
-        width: 95%;
-    }
-
-    .google-form-button, .google-review-button {
-        font-size: 20px;
-        padding: 8px 12px;
-    }
-
-    .review-item {
-        max-width: 100%;
-    }
-}
 /* General accordion styles */
 .accordion {
   width: 100%;
@@ -229,4 +208,22 @@ background: #FFFFFF
 
 .accordion-item.active .accordion-content {
   display: block;
+}
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .container, .reviews-display, .review-section,.about-us-section ,.footer {
+        width: 95%;
+    }
+
+    .google-form-button, .google-review-button {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .review-item {
+        max-width: 100%;
+    }
 }
