@@ -1,98 +1,175 @@
-/* Define color variables for easy theme management */
-:root {
-  --primary-color: #4CAF50; /* Primary theme color */
-  --secondary-color: #ffffff; /* Secondary color */
-  --text-color: #333333; /* Primary text color */
-  --background-color: #f8f8f8; /* Background color */
-  --font-family: 'Arial, sans-serif'; /* Default font family */
-  --gradient-start: #ff9a9e; /* Gradient start color */
-  --gradient-end: #fad0c4; /* Gradient end color */
-}
 
-/* Global styles */
+
 body {
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+background: #1D976C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+  
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 98%;
 }
 
-a {
-  color: var(--primary-color);
-  text-decoration: none;
+.header h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #65350F;
+    font-family: 'Playfair Display', serif;
 }
 
-a:hover {
-  text-decoration: underline;
+.header p {
+    font-size: 14px;
+    color: #481F01;
 }
-
-/* Button styles */
-button, .button {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover, .button:hover {
-  background-color: #45a049; /* Slightly darker shade of primary color */
-}
-
-/* Container styles */
+/* Container 1: White */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 90%;
+    max-width: 400px; /* ✅ Fixed size */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 15px; /* ✅ Reduced padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px; /* ✅ Added spacing */
+}
+
+.google-form-button, .google-review-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    text-align: center;
+}
+
+.google-form-button {
+    background-color: #DAA520;
+}
+
+.google-form-button:hover {
+    background-color: #B8860B;
+}
+
+.google-review-button {
+    background-color: #007BFF;
+}
+
+.google-review-button:hover {
+    background-color: #0056b3;
+}
+.reviews-container {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto; /* Center the reviews */
+}
+
+.review {
+  border: 1px solid #ddd; /* Light gray border */
   padding: 20px;
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  color: var(--text-color);
+  margin-bottom: 10px; /* Space between reviews */
 }
 
-.section {
-  margin-bottom: 40px;
+.review-header {
+  display: flex;
+  justify-content: space-between; /* Align name and stars */
+  margin-bottom: 10px;
 }
 
-/* Specific sections */
-.google-form-container,
-.review-section-container,
-.about-us-container,
-.join-whatsapp-group-container {
+.review-name {
+  font-weight: bold;
+}
+
+.review-stars {
+  color: gold; /* Example star color */
+}
+
+.review-content {
+  font-style: italic;
+}
+/* Container 3: Light Purple Gradient */
+.container-purple {
+  width: 80%;
+  margin: 20px auto;
   padding: 20px;
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+     font-family: "Times New Roman", serif;
+  background: linear-gradient(to bottom, #E6BCCD, #F8E7F7); /* Lighter purple shades */
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Section titles */
-.section-title {
-  margin-bottom: 20px;
-  color: var(--primary-color);
+.container-purple p { /* Target paragraphs ONLY within .container-purple */
+  font-style: italic;
+  color: black;
+}
+    .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contract-section {
+    text-align: center;
+    background-color: #C6FCFF; /* Light sky blue background */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Add hover effects and transitions */
-button, .button {
-  transition: all 0.3s ease;
+.contract-section a {
+    color: #d35400; /* Elegant brownish color */
+    text-decoration: none;
+    font-weight: bold;
 }
 
-button:hover, .button:hover {
-  background-color: #45a049;
+.contract-section a:hover {
+    text-decoration: underline;
 }
 
-/* Example of adding animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: radial-gradient( circle 957px at 1.9% 48.3%,  rgba(28,61,247,1) 0%, rgba(215,64,64,1) 53.7%, rgba(215,64,64,1) 90% );
+    font-weight: bold;
+    width: 90%;
 }
 
-.fade-in {
-  animation: fadeIn 1s ease-in;
+
+/* 🌟 Responsive Design for Mobile 🌟 */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .container, .reviews-display, .review-section,.about-us-section ,.footer {
+        width: 95%;
+    }
+
+    .google-form-button, .google-review-button {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .review-item {
+        max-width: 100%;
+    }
 }
