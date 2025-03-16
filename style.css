@@ -172,3 +172,61 @@ background: #FFFFFF
         max-width: 100%;
     }
 }
+/* General accordion styles */
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Accordion item styles */
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+/* Button styles */
+.accordion-toggle {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.accordion-toggle:hover {
+  background: #ececec;
+}
+
+/* Icon animation */
+.accordion-toggle .icon-[tabler--chevron-right] {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .icon-[tabler--chevron-right] {
+  transform: rotate(90deg);
+}
+
+/* Accordion content styles */
+.accordion-content {
+  background: #fff;
+  padding: 15px;
+  display: none;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
