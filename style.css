@@ -1,10 +1,15 @@
+/* Define color variables for easy theme management */
 :root {
   --primary-color: #4CAF50; /* Primary theme color */
   --secondary-color: #ffffff; /* Secondary color */
   --text-color: #333333; /* Primary text color */
   --background-color: #f8f8f8; /* Background color */
   --font-family: 'Arial, sans-serif'; /* Default font family */
+  --gradient-start: #ff9a9e; /* Gradient start color */
+  --gradient-end: #fad0c4; /* Gradient end color */
 }
+
+/* Global styles */
 body {
   font-family: var(--font-family);
   color: var(--text-color);
@@ -12,16 +17,21 @@ body {
   margin: 0;
   padding: 0;
 }
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
+
 a {
   color: var(--primary-color);
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
+/* Button styles */
 button, .button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -30,31 +40,59 @@ button, .button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 button:hover, .button:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: #45a049; /* Slightly darker shade of primary color */
 }
+
+/* Container styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: var(--text-color);
 }
+
 .section {
   margin-bottom: 40px;
 }
+
+/* Specific sections */
+.google-form-container,
+.review-section-container,
+.about-us-container,
+.join-whatsapp-group-container {
+  padding: 20px;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+/* Section titles */
 .section-title {
   margin-bottom: 20px;
+  color: var(--primary-color);
 }
+
 /* Add hover effects and transitions */
 button, .button {
   transition: all 0.3s ease;
 }
+
 button:hover, .button:hover {
-  background-color: #45a049; /* Slightly darker shade of primary color */
+  background-color: #45a049;
 }
+
+/* Example of adding animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 .fade-in {
   animation: fadeIn 1s ease-in;
 }
