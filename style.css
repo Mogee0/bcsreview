@@ -38,6 +38,8 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     text-align: center;
     margin-bottom: 20px;
+     width: 90%;
+  margin: 0 auto;
 }
 
 .google-form-button, .google-review-button, .download-button, .join-now-button {
@@ -154,15 +156,17 @@ body {
     width: 90%;
 }
 
-@media (max-width: 600px) {
-    .header h1 {
-        font-size: 24px;
-    }
-    .container, .reviews-container, .footer {
-        width: 95%;
-    }
-    .google-form-button, .google-review-button, .download-button, .join-now-button {
-        font-size: 18px;
-        padding: 10px 14px;
-    }
+/* Styles for devices with a width of 600px or more */
+@media (min-width: 600px) {
+  .sidebar {
+    display: block;
+  }
 }
+
+/* Styles for devices with a width less than 600px */
+@media (max-width: 599px) {
+  .sidebar {
+    display: none;
+  }
+}
+
