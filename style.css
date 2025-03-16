@@ -150,6 +150,12 @@ body {
     text-decoration: underline;
 }
 
+.join-now-button:hover {
+  background-color: #4CAF50; 
+  color: white; 
+  border: 2px solid #4CAF50; 
+  transition: all 0.3s ease; 
+}
 .footer {
     margin-top: 10px;
     text-align: center;
